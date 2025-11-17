@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Gustavo Soares Lopes</title>
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at top left, #0f141b, #0a0c10 80%);
+      --glass: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.18);
+      --highlight: rgba(255, 255, 255, 0.25);
+      --accent: #5aa9e6;
+      --text: #e8eef5;
+      --muted: #9da6b1;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: var(--bg-gradient);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      width: 90%;
+      max-width: 900px;
+      backdrop-filter: blur(25px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      background: linear-gradient(90deg, #84c5f4, #5aa9e6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    main {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    section {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(20px);
+      transition: all 0.4s ease;
+    }
+
+    section:hover {
+      transform: translateY(-6px);
+      border-color: var(--highlight);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #a6d8ff;
+      font-size: 1.3rem;
+      border-bottom: 1px solid var(--glass-border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .skill {
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      padding: 0.5rem 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+      transition: 0.3s;
+      backdrop-filter: blur(10px);
+    }
+
+    .skill:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: var(--highlight);
+    }
+
+    .project a {
+      color: #a6d8ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      width: 90%;
+      max-width: 900px;
+      backdrop-filter: blur(20px);
+      color: var(--muted);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gustavo Soares Lopes</h1>
+    <p>Desenvolvedor e Estudante de Tecnologia</p>
+    <p>CEUB - Análise e Desenvolvimento de Sistemas</p>
+	<p>
+    <a href="https://www.linkedin.com/in/gustavo-lopes-44b5a5385" 
+       target="_blank" 
+       style="color:#a6d8ff; text-decoration:none; font-weight:600;">
+       Meu LinkedIn
+    </a>
+  </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e criação de soluções digitais. Bbusco transformar ideias em projetos funcionais, criativos e eficientes. Sempre aprendendo e explorando novas ferramentas para evoluir como desenvolvedor.</p>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Java</span>
+        <span class="skill">Git/GitHub</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projetos</h2>
+      <div class="project">
+        <p><strong>PortfolioHUB:</strong> Um portfólio digital sobre mim.</p>
+        <a href="https://github.com/gTlopes">Ver no GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:gustavosl1306@sempreceub.com">gustavosl1306@sempreceub.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gustavo Soares Lopes. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
